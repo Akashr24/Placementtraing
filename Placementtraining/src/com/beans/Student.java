@@ -5,15 +5,9 @@ public class Student {
     private String Name;
     private Address address;
 
-    public void setRegno(int regno) {
+    public Student(int regno, String Name, Address address) {
         this.regno = regno;
-    }
-
-    public void setName(String name) {
-        Name = name;
-    }
-
-    public void setAddress(Address address) {
+        this.Name = Name;
         this.address = address;
     }
 

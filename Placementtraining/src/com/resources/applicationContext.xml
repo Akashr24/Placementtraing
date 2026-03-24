@@ -7,15 +7,15 @@
     <!-- bean definitions here -->
     <!--Student-->
     <bean class="com.beans.Student" id="S20">
-        <property name="regno" value="2601"/>
-        <property name="name" value="Ajay"/>
-        <property name="address" ref="A50"/>
+        <constructor-arg name="regno" value="2601"/>
+        <constructor-arg name="name" value="Ajay"/>
+        <constructor-arg name="address" ref="A50"/>
 
     </bean>
     <bean class="com.beans.Address" id="A50">
-        <property name="houseno" value="100" />
-        <property name="city" value="Udupi"/>
-        <property name="pincode" value="120021"/>
+       <constructor-arg  name="houseno" value="100" />
+       <constructor-arg  name="city" value="Udupi"/>
+        <constructor-arg name="pincode" value="120021"/>
     </bean>
 
 </beans>
